@@ -1,0 +1,119 @@
+{
+    "type": "chest",
+    "pools": [
+      {
+        "rolls": 26,
+        "bonus_rolls": 4,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 10,
+            "name": "minecraft:air",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 2,
+            "name": "minecraft:red_mushroom",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 3,
+            "name": "minecraft:feather",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 2,
+            "name": "minecraft:fermented_spider_eye",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 5,
+            "name": "minecraft:glowstone_dust",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 10,
+            "name": "minecraft:gunpowder",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 2,
+            "name": "minecraft:blaze_powder",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "quality": 1,
+            "name": "minecraft:written_book",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{title:\"Alchemy, chapter I\",author:\"Anonymous\",generation:3,pages:['{\"text\":\"Alchemy, chapter I\\\\n\\\\nFirstly place a cauldron on top of the campfire. Then fill the cauldron with water. After that\\'s done throw a bottle of water into the mix.\\\\n\\\\nAll done now you can start your first potion.\"}','{\"text\":\"To create your first potion you need those 4 ingredients:\\\\n1. \"}']}"
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "text": "Alchemy, chapter I",
+                    "color": "gold",
+                    "bold": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

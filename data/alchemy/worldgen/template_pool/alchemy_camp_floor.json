@@ -1,0 +1,15 @@
+{
+    "name": "alchemy:alchemy_camp_floor",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "alchemy:alchemy_camp/alchemy_camp_floor",
+                "projection": "rigid",
+                "processors": "minecraft:empty"
+            }
+        }
+    ]
+}

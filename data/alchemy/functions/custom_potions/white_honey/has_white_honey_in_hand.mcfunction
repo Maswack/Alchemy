@@ -1,0 +1,1 @@
+execute as @s at @s run scoreboard players set @s hasWhiteHoneyInHand 1

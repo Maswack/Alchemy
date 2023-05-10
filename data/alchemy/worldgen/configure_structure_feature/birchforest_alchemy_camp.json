@@ -1,0 +1,7 @@
+{
+    "config": {
+      "start_pool": "alchemy:birchforest_alchemy_camp",
+      "size": 1
+    },
+    "type": "minecraft:village"
+  }

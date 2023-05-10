@@ -1,0 +1,2 @@
+execute as @s at @s run execute as @e[type=item,nbt={Item:{id:"minecraft:stone_pickaxe",Count:1b}},distance=0..1,sort=nearest] at @s run function alchemy:station_placement/destroy
+execute as @s at @s run execute as @e[type=item,nbt={Item:{id:"minecraft:potion",Count:1b,tag:{Potion:"minecraft:awkward"}}},distance=0..1,sort=nearest] run execute as @s at @s run execute as @e[type=item,nbt={Item:{id:"minecraft:coal",Count:1b}},distance=0..1,sort=nearest] run function alchemy:crafting/recipes/speed_bottle

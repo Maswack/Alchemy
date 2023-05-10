@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "structure": "alchemy:birchforest_alchemy_camp",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 24,
+        "separation": 6,
+        "salt": 1646207470
+    }
+}
