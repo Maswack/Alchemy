@@ -10,7 +10,7 @@ execute as @a run scoreboard players add @s firstTick 1
 
 #station_operation_and_crafting_potions
 execute as @e[type=item,nbt={Item:{id:"minecraft:potion",tag:{Potion:"minecraft:water"}}}] run function alchemy:station_placement/initiation
-execute as @e[type=armor_stand,nbt={Tags:["alchemy_table"]}] run function alchemy:crafting/check_crafting
+execute as @e[type=armor_stand,nbt={Tags:["AC_alchemyTable"]}] run function alchemy:crafting/check_crafting
 #station_operation_and_crafting_potions
 
 
