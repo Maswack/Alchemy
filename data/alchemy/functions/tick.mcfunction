@@ -23,3 +23,7 @@ execute as @e[type=armor_stand,nbt={Tags:["AC_dateTimeArmorStand"]}] store resul
 #check if player was in bed:
 execute as @e[type=player,nbt={SleepTimer:100s}] run scoreboard players set @s hasPlayerSlept 20
 execute as @e[type=player] if score @s hasPlayerSlept matches 1.. run scoreboard players remove @s hasPlayerSlept 1
+
+
+#execute when chicken is present
+execute as @e[type=chicken,nbt={Tags:["AC_stationReplacer"]}] run function alchemy:station_placement/replacement
