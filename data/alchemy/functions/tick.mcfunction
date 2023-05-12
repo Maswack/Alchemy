@@ -10,14 +10,6 @@ execute as @e[type=armor_stand,nbt={Tags:["alchemy_table"]}] run function alchem
 #station_operation_and_crafting_potions
 
 
-#white_honey
-#execute inside on white honey if this happen
-execute as @e[type=player,scores={hasUsedPotion=1..}] at @s run function alchemy:custom_potions/used_potion
-
-#clear the state
-scoreboard players set @a hasWhiteHoneyInHand 0
-
-#if one of these is true change score of having white honey to 1
-execute as @e[type=player,nbt={Inventory:[{Slot:-106b,id:"minecraft:potion",tag:{white_honey:1b}}]}] if entity @s[nbt=!{SelectedItem:{id:"minecraft:potion"}}] run function alchemy:custom_potions/white_honey/has_white_honey_in_hand
-execute as @e[type=player,nbt={SelectedItem:{id:"minecraft:potion",tag:{white_honey:1b}}}] at @s run function alchemy:custom_potions/white_honey/has_white_honey_in_hand
-#white_honey
+execute as @e[type=armor_stand,nbt={Tags:["AC_dateTimeArmorStand"]}] store result score @s dateTime run time query daytime
+execute as @e[type=armor_stand,nbt={Tags:["AC_dateTimeArmorStand"]}] store result score @s diffDateTime run scoreboard players operation DateTimeSave dateTime -= DateTimeSave lastDateTime 
+execute as @e[type=armor_stand,nbt={Tags:["AC_dateTimeArmorStand"]}] store result score @s lastDateTime run time query daytime

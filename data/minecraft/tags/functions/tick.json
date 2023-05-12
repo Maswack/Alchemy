@@ -1,6 +1,8 @@
 { 
     "values": [
         "alchemy:tick",
-        "alchemy:custom_tick/clear_potions"
+        "alchemy:custom_tick/clear_potions",
+        "alchemy:custom_tick/potions",
+        "alchemy:custom_tick/delete"
     ]
 }
