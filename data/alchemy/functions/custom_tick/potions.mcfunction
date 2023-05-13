@@ -1,3 +1,9 @@
+#0
+#show players to which extent they are poisoned [use it if bossbars break at some point]
+#execute as @e[type=player] at @s run function alchemy:custom_potions/poison_from_potions/poison_rescaling
+#execute as @e[type=player] at @s run title @s actionbar ["",{"text":" >>>","color":"dark_gray","bold":true},{"text":"Magic Poisoning: ","bold":true,"color":"dark_green"},{"score":{"name":"@s","objective":"potionPoisonInBloodRescaled"},"color":"green"},{"text":"/30","color":"green"},{"text":" <<<","color":"dark_gray","bold":true}]
+#0
+
 #1
 #timer, lower the poison from potions effect
 execute as @e[type=player] if score @s potionPoisonInBlood matches 1.. run function alchemy:custom_potions/poison_of_potions
