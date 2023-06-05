@@ -17,36 +17,36 @@ scoreboard objectives add AC_b_playtime minecraft.custom:play_time
 # Another instance of "execute as @e[type=player] if score @s AC_b_assigned matches 1 if entity @s[nbt={SelectedItem:{id:"minecraft:potion"}}] run bossbar set minecraft:ac_b_1 visible true" in bossbar_show.mcfunction
 # Another instance of "execute as @e[type=player] if score @s AC_b_assigned matches 1 unless entity @s[nbt={SelectedItem:{id:"minecraft:potion"}}] run bossbar set minecraft:ac_b_1 visible false" in bossbar_show.mcfunction
 # Another instance of "execute as @e[type=player] if score @s AC_b_assigned matches 1 store result bossbar minecraft:ac_b_1 value run scoreboard players get @s potionPoisonInBlood" in bossbar_values.mcfunction
-bossbar add ac_b_1 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_2 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_3 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_4 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_5 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_6 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_7 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_8 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_9 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_10 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_11 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_12 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_13 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_14 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_15 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_16 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_17 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_18 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_19 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_20 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_21 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_22 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_23 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_24 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_25 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_26 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_27 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_28 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_29 {"text":"Magic Posoning" ,"color":"aqua"}
-bossbar add ac_b_30 {"text":"Magic Posoning" ,"color":"aqua"}
+bossbar add ac_b_1 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_2 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_3 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_4 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_5 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_6 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_7 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_8 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_9 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_10 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_11 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_12 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_13 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_14 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_15 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_16 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_17 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_18 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_19 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_20 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_21 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_22 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_23 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_24 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_25 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_26 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_27 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_28 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_29 {"text":"Magic Poisoning" ,"color":"aqua"}
+bossbar add ac_b_30 {"text":"Magic Poisoning" ,"color":"aqua"}
 
 bossbar set ac_b_1 color blue
 bossbar set ac_b_2 color blue
