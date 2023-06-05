@@ -1,119 +1,416 @@
 {
-    "type": "chest",
-    "pools": [
-      {
-        "rolls": 26,
-        "bonus_rolls": 4,
-        "entries": [
-          {
-            "type": "item",
-            "weight": 10,
-            "name": "minecraft:air",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "weight": 2,
-            "name": "minecraft:red_mushroom",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "weight": 3,
-            "name": "minecraft:feather",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "weight": 2,
-            "name": "minecraft:fermented_spider_eye",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "weight": 5,
-            "name": "minecraft:glowstone_dust",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "weight": 10,
-            "name": "minecraft:gunpowder",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "weight": 2,
-            "name": "minecraft:blaze_powder",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "item",
-            "weight": 1,
-            "quality": 1,
-            "name": "minecraft:written_book",
-            "functions": [
-              {
-                "function": "set_count",
-                "count": 1
-              },
-              {
-                "function": "set_nbt",
-                "tag": "{title:\"Alchemy, chapter I\",author:\"Anonymous\",generation:3,pages:['{\"text\":\"Alchemy, chapter I\\\\n\\\\nFirstly place a cauldron on top of the campfire. Then fill the cauldron with water. After that\\'s done throw a bottle of water into the mix.\\\\n\\\\nAll done now you can start your first potion.\"}','{\"text\":\"To create your first potion you need those 4 ingredients:\\\\n1. \"}']}"
-              },
-              {
-                "function": "set_name",
-                "name": [
-                  {
-                    "text": "Alchemy, chapter I",
-                    "color": "gold",
-                    "bold": true
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+  "type": "chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:water\"}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 25,
+      "bonus_rolls": 4,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 15,
+          "name": "minecraft:air",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 6,
+          "name": "minecraft:glistering_melon_slice",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 4,
+          "name": "minecraft:golden_carrot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 4,
+          "name": "minecraft:sugar",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 4,
+          "name": "minecraft:beetroot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:rotten_flesh",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:spider_eye",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:pufferfish",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:leather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:gunpowder",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:lapis_lazuli",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:red_mushroom",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:redstone",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:bone_meal",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 2,
+          "name": "minecraft:suspicious_stew",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:glass_bottle",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:brown_mushroom",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:rabbit_hide",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:salmon",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:nether_wart",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:quartz",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:mutton",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:fermented_spider_eye",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:glowstone_dust",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:bread",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['[\"\",{\"text\":\"================\\\\n| Alchemia Domowa |\\\\n================\",\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\nWitaj w przyborniku alchemicznym dla ka\\\\u017cdego gospodarza.\\\\n\\\\n\",\"color\":\"reset\"},{\"text\":\"Nie zapomnij aby przed rozpocz\\\\u0119ciem pracy mie\\\\u0107 gotowy rozgrzany kocio\\\\u0142 z butelk\\\\u0105 wody w \\\\u015brodku.\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Wrzu\\\\u0107 butelk\\\\u0119 wody do kot\\\\u0142a nad ogniskiem.\"}}]','[\"\",{\"text\":\"Mikstura Syto\\\\u015bci\",\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\nNajbardziej przydatna mikstura dla ci\\\\u0119\\\\u017cko pracuj\\\\u0105cego cz\\\\u0142owieka.\\\\n\\\\n\",\"color\":\"reset\"},{\"text\":\"Sk\\\\u0142adniki:\",\"italic\":true},{\"text\":\"\\\\nU\\\\u017cyta baza to md\\\\u0142a mikstura\\\\n\\\\nJeden \\\\u015bwierzo upieczony chleb\\\\n\\\\nJedna krwista baranina\",\"color\":\"reset\"}]','[\"\",{\"text\":\"Mikstura Leczenia\",\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\nNajlepszy sposób by wróci\\\\u0107 do pracy po skaleczeniu.\\\\n\\\\n\",\"color\":\"reset\"},{\"text\":\"Sk\\\\u0142adniki:\",\"italic\":true},{\"text\":\"\\\\nU\\\\u017cyta baza to \\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\nJeden \\\\u015bwierzy burak\\\\n\\\\nJedna \\\\u0142y\\\\u017cka czystego cukru.\\\\n\\\\n \",\"color\":\"reset\"}]','[\"\",{\"text\":\"Mikstura Szybkiego Metabolizmu\",\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\nGdy gospodarz potrzebuje chwilowego kopa na koniec dnia.\\\\n\\\\nSk\\\\u0142adniki:\\\\nU\\\\u017cyt\\\\u2588 \\\\u2588\\\\u2588z\\\\u2588 \\\\u2588\\\\u2588 \\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\nJedno z\\\\u2588\\\\u2588\\\\u2588e mi\\\\u0119\\\\u2588o\\\\n\\\\nJ\\\\u2588\\\\u2588\\\\u2588\\\\u2588 \\\\u0142\\\\u2588\\\\u2588\\\\u2588\\\\u2588 \\\\u2588\\\\u2588k\\\\u2588\\\\u2588\",\"color\":\"reset\"}]','[\"\",{\"text\":\"M\\\\u2588ks\\\\u2588u\\\\u2588\\\\u2588 \\\\u2588\\\\u2588\\\\u2588nn\\\\u2588\\\\u015b\\\\u2588i\",\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\",\"color\":\"reset\"}]'],title:\"Alchemia Domowa\",author:Nieznany,generation:3}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Alchemia Domowa [Zniszczona]",
+                  "color": "dark_purple",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['[\"\",{\"text\":\"============\\\\n| \\\\u0020Alchemia \\\\u0020 |\\\\n| Podró\\\\u017cnika |\\\\n============\",\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\nWitaj w przyborniku alchemicznym dla podró\\\\u017cników.\\\\n\\\\n\",\"color\":\"reset\"},{\"text\":\"Nie zapomnij aby przed rozpocz\\\\u0119ciem pracy mie\\\\u0107 gotowy rozgrzany kocio\\\\u0142 z butelk\\\\u0105 wody w \\\\u015brodku.\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Wrzu\\\\u0107 butelk\\\\u0119 wody do kot\\\\u0142a nad ogniskiem.\"}}]','[\"\",{\"text\":\"Mikstura Odporno\\\\u015bci\",\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\nMikstura dla podró\\\\u017cnych w trudnych warunkach.\\\\n\\\\n\",\"color\":\"reset\"},{\"text\":\"Sk\\\\u0142adniki:\",\"italic\":true},{\"text\":\"\\\\nU\\\\u017cyta baza to md\\\\u0142a mikstura\\\\n\\\\nJeden l\\\\u015bni\\\\u0105cy arbuz\\\\n\\\\nJedna dobrej jako\\\\u015bci skóra\",\"color\":\"reset\"}]','[\"\",{\"text\":\"Mikstura Odporno\\\\u015bci na temperatur\\\\u0119\",\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\nDla podró\\\\u017cników pustyni.\\\\n\\\\n\",\"color\":\"reset\"},{\"text\":\"Sk\\\\u0142adniki:\",\"italic\":true},{\"text\":\"\\\\nU\\\\u017cyta baza to \\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\nJedna szczypta czerwonego py\\\\u0142u\\\\n\\\\nJedna dobrej jako\\\\u015bci skóra\\\\n \",\"color\":\"reset\"}]','[\"\",{\"text\":\"Mikstura Si\\\\u0142y\",\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\nGdy podró\\\\u017cnikowi brakuje si\\\\u0142.\\\\n\\\\nSk\\\\u0142adniki:\\\\nU\\\\u017cyt\\\\u2588 \\\\u2588\\\\u2588z\\\\u2588 \\\\u2588\\\\u2588 \\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\nJedna szczypta p\\\\u2588\\\\u2588\\\\u2588hu\\\\n\\\\nJ\\\\u2588\\\\u2588\\\\u2588\\\\u2588 l\\\\u2588\\\\u2588\\\\u2588\\\\u2588 \\\\u2588\\\\u2588b\\\\u2588\\\\u2588\",\"color\":\"reset\"}]','[\"\",{\"text\":\"M\\\\u2588ks\\\\u2588u\\\\u2588\\\\u2588 \\\\u2588\\\\u2588\\\\u2588nn\\\\u2588\\\\u015b\\\\u2588i\",\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\",\"color\":\"reset\"}]'],title:\"Alchemia Podróżnika\",author:Nieznany,generation:3}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Alchemia Podróżnika [Zniszczona]",
+                  "color": "dark_purple",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['[\"\",{\"text\":\"===========\\\\n| \\\\u0020Alchemia \\\\u0020|\\\\n| Heretyka \\\\u0020|\\\\n===========\",\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\nWitaj w przyborniku alchemicznym dla pocz\\\\u0105tkuj\\\\u0105cych Heretyków.\\\\n\\\\n\",\"color\":\"reset\"},{\"text\":\"Nie zapomnij aby przed rozpocz\\\\u0119ciem pracy mie\\\\u0107 gotowy rozgrzany kocio\\\\u0142 z butelk\\\\u0105 wody w \\\\u015brodku.\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Wrzu\\\\u0107 butelk\\\\u0119 wody do kot\\\\u0142a nad ogniskiem.\"}}]','[\"\",{\"text\":\"Mikstura Spowolnienia\",\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\nBy ma\\\\u0142cyh skurwieli uspokoi\\\\u0107\\\\n\\\\n\",\"color\":\"reset\"},{\"text\":\"Sk\\\\u0142adniki:\",\"italic\":true},{\"text\":\"\\\\nU\\\\u017cyta baza to md\\\\u0142a mikstura\\\\n\\\\nJeden minera\\\\u0142 lazurytu\\\\n\\\\nJedne oko paj\\\\u0105ka\",\"color\":\"reset\"}]','[\"\",{\"text\":\"Mikstura Nieszcz\\\\u0119\\\\u015bcia\",\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\nBy sprawi\\\\u0107 uderzenie si\\\\u0119 kogo\\\\u015b ma\\\\u0142ym palcem u nogi\\\\n\\\\n\",\"color\":\"reset\"},{\"text\":\"Sk\\\\u0142adniki:\",\"italic\":true},{\"text\":\"\\\\nU\\\\u017cyta baza to \\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\nDo bazy do\\\\u0142\\\\u0105czy\\\\u0107 mikstur\\\\u0119 szcz\\\\u0119\\\\u015bcia\\\\n\\\\nJedn\\\\u0105 zepsut\\\\u0105 zup\\\\u0119 ze zgni\\\\u0142ym ziemniakiem\\\\n \",\"color\":\"reset\"}]','[\"\",{\"text\":\"Mikstura Zatrucia\",\"bold\":true,\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\nBy przyku\\\\u0107 kogo\\\\u015b do muszli.\\\\n\\\\nSk\\\\u0142adniki:\\\\nU\\\\u017cyt\\\\u2588 \\\\u2588\\\\u2588z\\\\u2588 \\\\u2588\\\\u2588 \\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\nJedna rozdymka m\\\\u2588rsk\\\\u2588\\\\n\\\\nJ\\\\u2588\\\\u2588\\\\u2588\\\\u2588 o\\\\u2588\\\\u2588 p\\\\u2588j\\\\u2588\\\\u2588a\",\"color\":\"reset\"}]','[\"\",{\"text\":\"M\\\\u2588ks\\\\u2588u\\\\u2588\\\\u2588 \\\\u2588\\\\u2588\\\\u2588nn\\\\u2588\\\\u015b\\\\u2588i\",\"color\":\"dark_purple\"},{\"text\":\"\\\\n\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\n\\\\n\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\\\\u2588\",\"color\":\"reset\"}]'],title:\"Alchemia Podróżnika\",author:Nieznany,generation:3}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "text": "Alchemia Heretyka [Zniszczona]",
+                  "color": "dark_purple",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
