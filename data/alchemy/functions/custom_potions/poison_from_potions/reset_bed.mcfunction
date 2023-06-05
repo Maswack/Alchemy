@@ -2,7 +2,7 @@ scoreboard objectives add placeholder dummy
 scoreboard players add @s placeholder 24000
 
 
-scoreboard players operation @s placeholder += @e[type=armor_stand,nbt={Tags:["AC_dateTimeArmorStand"]}] diffDateTime
+scoreboard players operation @s placeholder += @e[type=armor_stand,nbt={Tags:["AC_dateTimeArmorStand"]},limit=1] diffDateTime
 scoreboard players operation @s potionPoisonInBlood -= @s placeholder
 
 
