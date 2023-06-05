@@ -27,3 +27,4 @@ scoreboard objectives add hasPlayerSlept dummy
 
 #first Tick
 scoreboard objectives add firstTick dummy
+scoreboard players set @a firstTick 0
