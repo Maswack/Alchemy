@@ -1,2 +1,2 @@
-execute at @s run particle minecraft:happy_villager ~ ~1 ~ 0.5 1.5 0.5 1.0 250
+execute at @s run particle minecraft:soul ~ ~1.2 ~ 0.1 0.5 0.1 0.025 66
 execute at @s as @s run playsound minecraft:block.brewing_stand.brew master @e[type=player,distance=0..10] ~ ~ ~ 2 0.75
