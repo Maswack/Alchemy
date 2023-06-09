@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Alchemy+",
+            "bold": true,
+            "color": "gold"
+        },
+        "description": {
+            "text": ""
+        },
+        "icon": {
+            "item": "minecraft:brewing_stand"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/block/nether_wart_block.png"
+    },
+    "criteria": {
+        "instant": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
