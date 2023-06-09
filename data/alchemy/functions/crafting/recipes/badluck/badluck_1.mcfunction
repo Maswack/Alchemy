@@ -6,3 +6,5 @@ execute at @s run kill @e[type=item,nbt={Item:{id:"minecraft:suspicious_stew",Co
 execute at @s run kill @e[type=item,nbt={Item:{id:"minecraft:poisonous_potato",Count:1b}}, sort=nearest]
 
 execute as @s at @s run function alchemy:crafting/crafting_completed
+
+advancement grant @p only alchemy:talent

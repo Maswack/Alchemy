@@ -5,3 +5,5 @@ execute at @s run kill @e[type=item,nbt={Item:{id:"minecraft:beetroot",Count:1b}
 execute at @s run kill @e[type=item,nbt={Item:{id:"minecraft:bone_meal",Count:1b}}, sort=nearest]
 
 execute as @s at @s run function alchemy:crafting/crafting_completed
+
+advancement grant @p only alchemy:experienced
