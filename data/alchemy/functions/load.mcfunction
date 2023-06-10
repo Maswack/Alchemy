@@ -28,3 +28,6 @@ scoreboard objectives add hasPlayerSlept dummy
 #first Tick
 scoreboard objectives add firstTick dummy
 scoreboard players set @a firstTick 0
+
+#force load to make sure that armor stand at 0,0 spawns
+forceload add -1 -1 1 1
