@@ -10,7 +10,7 @@
             "text": "Że ci się chciało?"
         },
         "icon": {
-            "item": "minecraft:stone"
+            "item": "minecraft:barrier"
         },
         "frame": "challenge",
         "show_toast": true,
