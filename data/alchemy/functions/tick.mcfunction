@@ -1,6 +1,7 @@
 #advancment
 #scoreboard players add TempObject TempObject 1
 #execute as @a unless entity @s[advancements={alchemy:entry=true}] run advancement grant @s only alchemy:entry
+advancement grant @a only alchemy:root
 #advancment
 
 #first tick, initialize something when world is loaded
