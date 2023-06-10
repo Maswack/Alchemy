@@ -7,6 +7,7 @@
         "alchemy:bossbar/bossbar_logic",
         "alchemy:bossbar/bossbar_show",
         "alchemy:bossbar/bossbar_values",
-        "alchemy:bossbar/bossbar_tick"
+        "alchemy:bossbar/bossbar_tick",
+        "alchemy:custom_tick/no_poison_potions"
     ]
 }
