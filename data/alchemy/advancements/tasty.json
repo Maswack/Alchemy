@@ -21,7 +21,7 @@
             "conditions": {
                 "item": {
                     "item": "minecraft:potion",
-                    "nbt": "{Item:{tag:{ac_potion:1b}}}"
+                    "nbt": "{AC_Potion:1b}"
                 }
             }
         }
