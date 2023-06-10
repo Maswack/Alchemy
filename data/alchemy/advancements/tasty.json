@@ -20,7 +20,8 @@
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
-                    "item": "minecraft:potion"
+                    "item": "minecraft:potion",
+                    "tag": "ac_potion:1b"
                 }
             }
         }
