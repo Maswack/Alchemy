@@ -15,6 +15,7 @@ scoreboard objectives add hasUsedSplashPotion minecraft.used:splash_potion
 scoreboard objectives add potionPoisonInBlood dummy
 scoreboard objectives add potionPoisonInBloodRescaled dummy
 
+scoreboard objectives add AC_p_holdNoPoisonPotion dummy
 
 #checking for deaths
 scoreboard objectives add hasPlayerDied deathCount
