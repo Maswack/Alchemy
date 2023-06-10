@@ -18,8 +18,8 @@
         "background": "minecraft:textures/block/nether_wart_block.png"
     },
     "criteria": {
-        "instant": {
-            "trigger": "minecraft:tick"
+        "impossible": {
+            "trigger": "minecraft:impossible"
         }
     }
 }
