@@ -11,11 +11,25 @@ execute as @e[type=player] if score @s potionPoisonInBlood matches 1.. run funct
 
 
 
-#2
-#check if player died or slept to dispose some of poison
+#2a
+#check if player died to dispose some of poison.
 execute as @e[type=player] if score @s hasPlayerDied matches 1.. run function alchemy:custom_potions/poison_from_potions/reset
-execute as @e[type=player] if score @s hasPlayerSlept matches 1.. if score @e[type=armor_stand,nbt={Tags:["AC_dateTimeArmorStand"]},limit=1] diffDateTime matches -23000..-1 run function alchemy:custom_potions/poison_from_potions/reset_bed
-#2
+#2b
+# Check if player slept to dispose some of poison.
+# The first command is ran by defalut. It is ment for worlds without any alterations to sleep using mods such as SleepWarp.
+execute if score admin AC_admin_sleep matches 1 as @e[type=player] if score @s hasPlayerSlept matches 1.. if score @e[type=armor_stand,nbt={Tags:["AC_dateTimeArmorStand"]},limit=1] diffDateTime matches -23000..-1 run function alchemy:custom_potions/poison_from_potions/reset_bed
+# WARNING! If you are using the mod SleepWarp for fabric it is highly recomended to change the scoreboard of player 'admin' of AC_admin_sleep to 2!
+# This will adapt the sleep posion removal to be synchronized (somewhat) with the mod!
+# Be aware! This feature is experimental and might not work as expected, especially on multiplayer
+# It is expected that the amount of poison removed varies between nights when different amounts of players sleep.
+# If this behavior is unwanted the easiest action to do would be to adjust the configs of the mod to better synchronize with the datapack.
+# The SleepWarp compability mode runs in the following way: the amount of poison removed is linearly corelated to amount of players sleeping (1 player is x2, 2 is x3 ...)
+# For best results try to optimize the mod for the linear posion removal.
+execute if score admin AC_admin_sleep matches 2 as @e[type=minecraft:player] if score @s AC_sleep_inBed matches ..1 run scoreboard players add @s AC_sleep_players 1
+execute if score admin AC_admin_sleep matches 2 as @e[type=minecraft:player] if score @s AC_sleep_inBed matches ..1 run scoreboard players operation @s potionPoisonInBlood -= @s AC_sleep_players
+execute if score admin AC_admin_sleep matches 2 as @e[type=minecraft:player] if score @s AC_sleep_players matches 1.. as @e[type=minecraft:player,limit=1] run execute as @e[type=player] if score @s AC_sleep_inBed matches 2.. run scoreboard players remove @s potionPoisonInBlood 1
+execute if score admin AC_admin_sleep matches 2 run scoreboard players set @a AC_sleep_players 0
+# To revert to vanilla mode set scoreboard of player admin of AC_admin_sleep back to 1
 
 
 
