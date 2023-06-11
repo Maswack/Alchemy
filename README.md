@@ -6,10 +6,10 @@
  
  Current verison: 1.1.2v
  
- Changes in version 1.1.2v:
+ New changes:
  - added limited ability for handling of sleeping with a WarpSleep mod. (more details in the custom_tick/potions file) 
  
- Previous Changes:
+ ==Previous Changes==
  
  Changes in version 1.1.1v:
  - fixed some bugs and mistakes
