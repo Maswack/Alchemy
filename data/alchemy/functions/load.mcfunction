@@ -1,5 +1,5 @@
 #Welcoming message
-tellraw @a ["",{"text":"||","color":"blue"},{"text":" Welcome to "},{"text":"Alchemy+","bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":[{"text":"Datapack created for server "},{"text":"Rolled Hills","bold":true,"color":"blue"},{"text":" by the "},{"text":"Enchanted ","bold":true,"color":"gold"},{"text":"dev team."}]}},{"text":" datapack. \n"},{"text":"||","color":"blue"},{"text":" You're currently running version "},{"text":"1.1.1v","bold":true,"color":"green"},{"text":"."}]
+tellraw @a ["",{"text":"||","color":"blue"},{"text":" Welcome to "},{"text":"Alchemy+","bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":[{"text":"Datapack created for server "},{"text":"Rolled Hills","bold":true,"color":"blue"},{"text":" by the "},{"text":"Enchanted ","bold":true,"color":"gold"},{"text":"dev team."}]}},{"text":" datapack. \n"},{"text":"||","color":"blue"},{"text":" You're currently running version "},{"text":"1.1.2v","bold":true,"color":"green"},{"text":"."}]
 
 #to adv
 #scoreboard objectives add TempObject dummy
@@ -32,3 +32,11 @@ scoreboard players set @a firstTick 0
 
 #force load to make sure that armor stand at 0,0 spawns
 forceload add -1 -1 1 1
+
+#scoreboards for tracking sleeping players
+scoreboard objectives add AC_sleep_inBed minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add AC_sleep_players dummy
+
+#admin scoreboards for triggers etc
+scoreboard objectives add AC_admin_sleep dummy
+execute unless score admin AC_admin_sleep matches 1.. run scoreboard players set admin AC_admin_sleep 1
