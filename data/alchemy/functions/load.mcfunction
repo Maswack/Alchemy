@@ -37,6 +37,8 @@ forceload add -1 -1 1 1
 scoreboard objectives add AC_sleep_inBed minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add AC_sleep_players dummy
 
-#admin scoreboards for triggers etc
-scoreboard objectives add AC_admin_sleep dummy
-execute unless score admin AC_admin_sleep matches 1.. run scoreboard players set admin AC_admin_sleep 1
+#Scoreboards for sleep synchronization with SleepWarp mod etc
+scoreboard objectives add AC_sleep_inBed minecraft.custom:minecraft.time_since_rest
+scoreboard objectives add AC_sleep_players dummy
+scoreboard objectives add AC_admin_mod_SleepWarp_MaxTicksAdded dummy
+execute unless score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. run scoreboard players set amount AC_admin_mod_SleepWarp_MaxTicksAdded 0
