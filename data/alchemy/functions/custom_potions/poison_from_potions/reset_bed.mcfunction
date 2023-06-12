@@ -10,3 +10,5 @@ scoreboard players set @s hasPlayerSlept 0
 execute if score @s potionPoisonInBlood matches ..0 run scoreboard players set @s potionPoisonInBlood 0
 
 scoreboard objectives remove placeholder
+
+advancement grant @s only alchemy:im_better_now
