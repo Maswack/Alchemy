@@ -23,21 +23,7 @@ execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 0 as @e[typ
 # Be aware! This feature is experimental and might not work as expected, especially when other numerical settings in the config file have been changed.
 # You are welcome to fine tune the 'amount' of AC_admin_mod_SleepWarp_MaxTicksAdded in that or any other cases.
 # For best results try to optimize the mod for the linear posion removal with the 'amount'.
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. run scoreboard players set PlayersInBed AC_sleep_players 0
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. run scoreboard players set NumberOfPlayers AC_sleep_players 0
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. as @e[type=minecraft:player] if score @s AC_sleep_inBed matches ..1 run scoreboard players add PlayersInBed AC_sleep_players 1
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. as @e[type=minecraft:player] run scoreboard players add NumberOfPlayers AC_sleep_players 1
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. if score PlayersInBed AC_sleep_players < NumberOfPlayers AC_sleep_players run scoreboard players add PlayersInBed AC_sleep_players 1
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. store result score SleepingPercentage AC_sleep_players run scoreboard players operation PlayersInBed AC_sleep_players /= NumberOfPlayers AC_sleep_players
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. store result score poisonRemoveAmount AC_sleep_players run scoreboard players operation SleepingPercentage AC_sleep_players *= amount AC_admin_mod_SleepWarp_MaxTicksAdded
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. as @e[type=minecraft:player] if score @s AC_sleep_inBed matches ..1 run scoreboard players operation @s potionPoisonInBlood -= poisonRemoveAmount AC_sleep_players
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. run scoreboard players set PlayersInBed AC_sleep_players 0
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. run scoreboard players set NumberOfPlayers AC_sleep_players 0
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. as @e[type=minecraft:player] if score @s AC_sleep_inBed matches ..1 run scoreboard players add PlayersInBed AC_sleep_players 1
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. as @e[type=minecraft:player] run scoreboard players add NumberOfPlayers AC_sleep_players 1
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. store result score SleepingPercentage AC_sleep_players run scoreboard players operation PlayersInBed AC_sleep_players /= NumberOfPlayers AC_sleep_players
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. store result score poisonRemoveAmount AC_sleep_players run scoreboard players operation SleepingPercentage AC_sleep_players *= amount AC_admin_mod_SleepWarp_MaxTicksAdded
-execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. as @e[type=minecraft:player] if score @s AC_sleep_inBed matches 2.. run scoreboard players operation @s potionPoisonInBlood -= poisonRemoveAmount AC_sleep_players
+execute if score amount AC_admin_mod_SleepWarp_MaxTicksAdded matches 1.. run function alchemy:custom_potions/poison_from_potions/reset_bed_sleepwarp
 # To revert to vanilla mode set scoreboard of player 'amount' of AC_admin_mod_SleepWarp_MaxTicksAdded back to 0
 
 
