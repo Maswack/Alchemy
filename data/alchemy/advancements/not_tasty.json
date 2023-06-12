@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Jednak nie smaczne",
+            "color": "white"
+        },
+        "description": {
+            "text": "Zatruj się na śmierć magią przy pomocy mikstury"
+        },
+        "icon": {
+            "item": "minecraft:skeleton_skull"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "alchemy:tasty"
+}

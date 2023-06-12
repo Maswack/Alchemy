@@ -9,7 +9,7 @@
             "text": "Zbuduj pierwszy kocioł alchemiczny"
         },
         "icon": {
-            "item": "minecraft:glass_bottle"
+            "item": "minecraft:cauldron"
         },
         "frame": "task",
         "show_toast": true,
