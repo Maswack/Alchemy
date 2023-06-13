@@ -12,7 +12,7 @@
  
  ==Previous Changes==
 
- Changes in version 1.1.4v:
+ Changes in version 1.1.5v:
 
 - Further improvements to SleepWarp mod handling - near perfect synchronization
 - Alpha and Beta build warnings added
