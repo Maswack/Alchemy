@@ -11,4 +11,4 @@ execute if score @s potionPoisonInBlood matches ..0 run scoreboard players set @
 
 scoreboard objectives remove placeholder
 
-advancement grant @s only alchemy:im_better_now
+execute as @s if entity @s[advancements={alchemy:tasty=true}] run advancement grant @s only alchemy:im_better_now

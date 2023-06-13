@@ -5,5 +5,5 @@ execute at @s run kill @e[type=item,nbt={Item:{id:"minecraft:suspicious_stew",Co
 
 execute as @s at @s run function alchemy:crafting/crafting_completed
 
-advancement grant @p only alchemy:experienced
-advancement grant @p only alchemy:why
+execute as @e[type=player,advancements={alchemy:talent=true},limit=1,sort=nearest] run advancement grant @s only alchemy:why
+execute as @e[type=player,advancements={alchemy:talent=true},limit=1,sort=nearest] run advancement grant @s only alchemy:experienced

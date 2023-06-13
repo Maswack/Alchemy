@@ -5,4 +5,4 @@ execute at @s run kill @e[type=item,nbt={Item:{id:"minecraft:glass_bottle",Count
 
 execute as @s at @s run function alchemy:crafting/crafting_completed
 
-advancement grant @p only alchemy:experienced
+execute as @e[type=player,advancements={alchemy:first_steps=true},limit=1,sort=nearest] run advancement grant @s only alchemy:experienced

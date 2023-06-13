@@ -13,7 +13,7 @@ execute if score PlayersInBed AC_sleep_players < NumberOfPlayers AC_sleep_player
 execute store result score SleepingPercentage AC_sleep_players run scoreboard players operation PlayersInBed AC_sleep_players /= NumberOfPlayers AC_sleep_players
 execute store result score poisonRemoveAmount AC_sleep_players run scoreboard players operation SleepingPercentage AC_sleep_players *= amount AC_admin_mod_SleepWarp_MaxTicksAdded
 execute as @e[type=minecraft:player] if score @s AC_sleep_inBed matches ..1 if score PlayerAsleep AC_sleep_length matches 1 run scoreboard players operation @s potionPoisonInBlood -= poisonRemoveAmount AC_sleep_players
-advancement grant @s only alchemy:im_better_now
+execute as @s if entity @s[advancements={alchemy:tasty=true}] run advancement grant @s only alchemy:im_better_now
 
 #players who aren't sleeping
 scoreboard players set PlayersInBed AC_sleep_players 0
