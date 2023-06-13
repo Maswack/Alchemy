@@ -6,12 +6,11 @@
  
  Current verison: 1.1.5v
 
+  New changes:
+
 - Further improvements to SleepWarp mod handling - near perfect synchronization
 - Alpha and Beta build warnings added
 - Changed mundane, thick and akward potions to be clean of magical poison
- 
-  New changes:
-
  
  ==Previous Changes==
 
