@@ -1,10 +1,19 @@
 #Welcome message
-tellraw @a ["",{"text":"||","color":"blue"},{"text":" Welcome to "},{"text":"Alchemy+","bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":[{"text":"Datapack created for server "},{"text":"Rolled Hills","bold":true,"color":"blue"},{"text":" by the "},{"text":"Enchanted ","bold":true,"color":"gold"},{"text":"dev team."}]}},{"text":" datapack. \n"},{"text":"||","color":"blue"},{"text":" You're currently running version "},{"text":"1.1.6v","bold":true,"color":"green"},{"text":"."}]
+tellraw @a ["",{"text":"||","color":"blue"},{"text":" Welcome to "},{"text":"Alchemy+","bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":[{"text":"Datapack created for server "},{"text":"Rolled Hills","bold":true,"color":"blue"},{"text":" by the "},{"text":"Enchanted ","bold":true,"color":"gold"},{"text":"dev team."}]}},{"text":" datapack. \n"},{"text":"||","color":"blue"},{"text":" You're currently running version "},{"text":"1.1.7v","bold":true,"color":"green"},{"text":"."}]
 #Warning: Beta build
 #tellraw @a ["",{"text":"||","color":"blue"},{"text":"Warning! ", "color":"red","bold":true},{"text":"You are running a ","color":"red"},{"text":"BETA" ,"color":"dark_aqua","underlined":true},{"text":" build! Proceed with caution!","color":"red"}]
 #Warning: Alpha build
 #tellraw @a ["",{"text":"||","color":"blue"},{"text":"Warning! ", "color":"red","bold":true},{"text":"You are running a ","color":"red"},{"text":"BETA" ,"color":"dark_aqua","underlined":true},{"text":" build! Proceed with caution!","color":"red"}]
 
+#Herobrine
+# ⬛⬛⬛⬛⬛⬛⬛⬛
+# ⬛⬛⬛⬛⬛⬛⬛⬛
+# ⬛🟫🟫🟫🟫🟫🟫⬛
+# 🟫🟫🟫🟫🟫🟫🟫🟫
+# 🟫⬜⬜🟫🟫⬜⬜🟫
+# 🟫🟫🟫⬛⬛🟫🟫🟫
+# 🟫🟫⬛🟫🟫⬛🟫🟫
+# 🟫🟫⬛⬛⬛⬛🟫🟫
 
 
 #to adv

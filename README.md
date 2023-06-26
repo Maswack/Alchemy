@@ -4,13 +4,18 @@
  
  You will find here all the files from the datapack Alchemy+ developed by Enchanted dev team with some bonus content such as charts.
  
- Current verison: 1.1.6v
+ Current verison: 1.1.7v
 
   New changes:
 
-- Fixed advancement criteria
+- Fixed splash potions not being deleted
+- Added herobrine... again. He's a naughty boy and doesn't want to stay.
  
  ==Previous Changes==
+
+ Changes in version 1.1.6v:
+
+- Fixed advancement criteria
 
  Changes in version 1.1.5v:
 
