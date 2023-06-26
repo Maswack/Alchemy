@@ -3,7 +3,6 @@
         "alchemy:tick",
         "alchemy:custom_tick/clear_potions",
         "alchemy:custom_tick/potions",
-        "alchemy:custom_tick/delete",
         "alchemy:bossbar/bossbar_logic",
         "alchemy:bossbar/bossbar_show",
         "alchemy:bossbar/bossbar_values",
